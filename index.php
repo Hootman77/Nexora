@@ -50,7 +50,6 @@
                 while($row = $result-> fetch_assoc()) {
                     echo "
                         <tr>
-                        <td>$row[id]</th>
                         <td>$row[name]</th>
                         <td>$row[organisation]</th>
                         <td>$row[email]</th>
