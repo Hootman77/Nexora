@@ -2,7 +2,7 @@
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $database = "nominationsv1";
@@ -63,7 +63,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
     $sucessMessage = "Nomination Successful"; 
 
-        header("location: /TeamProject/index.php");
+        header("location: /index.php");
         exit;
 
     } while (false);

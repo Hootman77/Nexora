@@ -3,7 +3,7 @@ if ( isset($_GET["id"])) {
 
     $id = $_GET["id"];
 
-    $servername = "localhost";
+    $servername = "127.0.0.1";
     $username = "root";
     $password = "";
     $database = "nominationsv1";
@@ -15,7 +15,7 @@ if ( isset($_GET["id"])) {
 
 }
 
- header("location: /TeamProject/index.php");
+ header("location: /index.php");
  exit;
 
 ?>

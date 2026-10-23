@@ -1,0 +1,13 @@
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR (100) NOT NULL,
+    organisation VARCHAR (100) NOT NULL,
+    email VARCHAR (200) NOT NULL UNIQUE,
+    info VARCHAR (300) NOT NULL,
+    benefit VARCHAR (300) NOT NULL,
+    info2 VARCHAR (300) NOT NULL,
+    nominator VARCHAR (100) NOT NULL,
+    self_nomination VARCHAR (10) NOT NULL,
+    consent VARCHAR (10) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

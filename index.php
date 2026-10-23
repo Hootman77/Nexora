@@ -28,7 +28,7 @@
             </thead>
             <tbody>
                 <?php
-                $servername = "localhost";
+                $servername = "127.0.0.1";
                 $username = "root";
                 $password = "";
                 $database = "nominationsv1";
@@ -61,8 +61,8 @@
                         <td>$row[consent]</th>
                         <td>$row[created_at]</th>
                         <td>
-                            <a class='btn btn-primary btn-sm' href='/TeamProject/delete.php?id=$row[id]'> Delete</a>
-                            <a class='btn btn-primary btn-sm' href='/TeamProject/publish.php?id=$row[id]'> Publish</a>
+                            <a class='btn btn-primary btn-sm' href='/delete.php?id=$row[id]'> Delete</a>
+                            <a class='btn btn-primary btn-sm' href='/publish.php?id=$row[id]'> Publish</a>
                             </td>
                 </tr>
 
